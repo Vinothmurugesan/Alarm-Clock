@@ -1,0 +1,70 @@
+/* @import url('https://fonts.googleapis.com/css2?family-Poppins;wght@400;500;600&display-swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body, .wrapper, .content{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+body{
+    min-height: 100vh;
+    background: url(./doc/bgimg.jpg);
+    background-size: cover;
+
+}
+.wrapper{
+    background:  rgb(32, 218, 131);
+    width: 600px;
+    border-radius:  50px;
+    flex-direction: column;
+    padding: 30px 30px 50px;
+} 
+.wrapper img{
+    max width: 350px;
+}
+.wrapper h1{
+    font-size: 50px;
+    font-weight: 200;
+    margin: 10px;
+}
+.wrapper .content{
+    width: 100%;
+    justify-content: space-between;
+}
+.wrapper .content.disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
+.content .column{
+    border-radius: 20px;
+    padding: 0 20px;
+    border: 1px solid rgb(47, 128, 221);
+    width: calc(100% /3 - 6px);
+    background-color: rgb(252, 159, 159);
+}
+.column select{
+    outline: none;
+    border: none;
+    height: 53px;
+    width:100%;
+    font-size:16px;
+    cursor: pointer;
+    background: rgb(243, 63, 63);
+}
+  
+.wrapper button{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 17px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    background:rgb(62, 108, 235);
+    color:antiquewhite
+   
+}
